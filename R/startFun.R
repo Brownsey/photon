@@ -99,8 +99,8 @@ startFun <- function(input_path, cran_packages=NULL, bioc_packages=NULL, github_
       )
     )
     
-    input_app_dir <- stringr::str_replace_all(input_path, "/", "\\")
-    electron_win_dir <- stringr::str_replace_all(electron_path, "/", "\\")
+    input_app_dir <- stringr::str_replace_all(input_path, "\", "/")
+    electron_win_dir <- stringr::str_replace_all(electron_path, "\", "/")
    # input_app_dir <- input_path
    # electron_win_dir <- electron_path
     
